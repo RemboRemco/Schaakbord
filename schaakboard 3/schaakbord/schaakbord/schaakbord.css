@@ -1,0 +1,71 @@
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 1px;
+  background-color: grey;
+  padding: 1px;
+  height: 85vh;
+  aspect-ratio: 8 / 8;
+}
+
+.grid-container > div {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+}
+
+.grid-container > div > img {
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(2px);
+}
+
+.promoveer {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #888;
+  box-shadow: 7px 5px 5px black;
+  background-color: rgba(255,255,255,.9);
+}
+
+.promoveer .header {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.modal .buttons {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+}
+
+
+.modal .buttons img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+}
